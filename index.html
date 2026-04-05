@@ -187,38 +187,34 @@
 
 <script>
 window.addEventListener("load", function () {
-  if (typeof particlesJS !== "undefined") {
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 100 },
-        color: { value: "#4CAF50" },
-        shape: { type: "circle" },
-        opacity: { value: 0.6 },
-        size: { value: 3 },
-        line_linked: {
-          enable: true,
-          distance: 140,
-          color: "#4CAF50",
-          opacity: 0.5,
-          width: 1
-        },
-        move: {
-          enable: true,
-          speed: 2
-        }
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 100 },
+      color: { value: "#4CAF50" },
+      shape: { type: "circle" },
+      opacity: { value: 0.6 },
+      size: { value: 3 },
+      line_linked: {
+        enable: true,
+        distance: 140,
+        color: "#4CAF50",
+        opacity: 0.5,
+        width: 1
       },
-      interactivity: {
-        events: {
-          onhover: {
-            enable: true,
-            mode: "repulse"
-          }
+      move: {
+        enable: true,
+        speed: 2
+      }
+    },
+    interactivity: {
+      events: {
+        onhover: {
+          enable: true,
+          mode: "repulse"
         }
       }
-    });
-  } else {
-    console.log("Particles.js failed to load 😭");
-  }
+    }
+  });
 });
 </script>
 
