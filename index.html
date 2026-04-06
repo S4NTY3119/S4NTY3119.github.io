@@ -125,15 +125,10 @@
       line-height: 1.6;
     }
 
-    .roblox, .discord {
-      text-align: center;
-      margin: 30px 0;
-    }
-
-    .roblox a {
+    /* Buttons style inside video container */
+    .roblox a, .discord a {
       color: white;
       text-decoration: none;
-      background: #ff4757;
       padding: 12px 18px;
       border-radius: 10px;
       display: inline-flex;
@@ -143,31 +138,23 @@
       font-size: 14px;
     }
 
+    .roblox a {
+      background: #ff4757;
+    }
     .roblox a:hover {
       background: #e84118;
       transform: scale(1.05);
     }
 
     .discord a {
-      color: white;
-      text-decoration: none;
-      background: #2ecc71; /* green */
-      padding: 12px 18px;
-      border-radius: 10px;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      transition: 0.3s;
-      font-size: 14px;
-      margin-top: 15px; /* space below Roblox button */
+      background: #2ecc71;
     }
-
     .discord a:hover {
-      background: #27ae60; /* darker green hover */
+      background: #27ae60;
       transform: scale(1.05);
     }
 
-    /* ✅ CLEAN ICON STYLE */
+    /* Button icons */
     .roblox img,
     .discord img {
       width: 20px;
@@ -176,13 +163,10 @@
       transition: 0.25s;
     }
 
-    /* 🟢 Roblox subtle green glow */
     .roblox a:hover img {
       transform: scale(1.15);
       box-shadow: 0 0 6px #4CAF50;
     }
-
-    /* 🟢 Discord subtle green glow */
     .discord a:hover img {
       transform: scale(1.15);
       box-shadow: 0 0 6px #2ecc71;
@@ -229,24 +213,27 @@
     </div>
   </div>
 
-  <div style="max-width: 700px; width: 100%; margin-top: 30px; text-align: center;">
+  <!-- Video + Buttons container -->
+  <div style="max-width: 700px; width: 100%; margin-top: 30px; position: relative; text-align: center;">
     <h2>Watch this video to know how to use this site</h2>
     <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="100%" height="315" style="border-radius:12px;"></iframe>
-  </div>
 
-  <!-- Buttons Section -->
-  <div class="roblox">
-    <a href="https://www.roblox.com/users/5715215513/profile" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968763.png">
-      Visit my Roblox Profile
-    </a>
-  </div>
+    <!-- Roblox button left-bottom -->
+    <div class="roblox" style="position: absolute; bottom: 10px; left: 10px;">
+      <a href="https://www.roblox.com/users/5715215513/profile" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968763.png">
+        Visit my Roblox Profile
+      </a>
+    </div>
 
-  <div class="discord">
-    <a href="https://discord.com/users/1273569463093952564" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
-      Contact me on Discord
-    </a>
+    <!-- Discord button right-bottom -->
+    <div class="discord" style="position: absolute; bottom: 10px; right: 10px;">
+      <a href="https://discord.com/users/1273569463093952564" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
+        Contact me on Discord
+      </a>
+    </div>
+
   </div>
 
 </div>
