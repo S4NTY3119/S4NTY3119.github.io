@@ -171,21 +171,25 @@
       transform: scale(1.05);
     }
 
-    /* 🔥 NEON ICON FIX */
+    /* ✅ CLEAN ICON STYLE (FIXED) */
     .roblox img,
     .discord img {
       width: 20px;
       height: 20px;
-      filter: brightness(0) saturate(100%) invert(70%) sepia(100%) saturate(500%) hue-rotate(90deg);
-      box-shadow: 0 0 8px #4CAF50, 0 0 15px #4CAF50;
       border-radius: 4px;
-      transition: 0.3s;
+      transition: 0.25s;
     }
 
-    .roblox a:hover img,
+    /* 🟢 Roblox subtle green glow */
+    .roblox a:hover img {
+      transform: scale(1.15);
+      box-shadow: 0 0 6px #4CAF50;
+    }
+
+    /* 🔵 Discord subtle blue glow */
     .discord a:hover img {
-      transform: scale(1.2);
-      box-shadow: 0 0 12px #00ffcc, 0 0 25px #00ffcc;
+      transform: scale(1.15);
+      box-shadow: 0 0 6px #5865F2;
     }
 
   </style>
