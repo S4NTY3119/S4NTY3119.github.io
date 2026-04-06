@@ -171,6 +171,23 @@
       transform: scale(1.05);
     }
 
+    /* 🔥 NEON ICON FIX */
+    .roblox img,
+    .discord img {
+      width: 20px;
+      height: 20px;
+      filter: brightness(0) saturate(100%) invert(70%) sepia(100%) saturate(500%) hue-rotate(90deg);
+      box-shadow: 0 0 8px #4CAF50, 0 0 15px #4CAF50;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .roblox a:hover img,
+    .discord a:hover img {
+      transform: scale(1.2);
+      box-shadow: 0 0 12px #00ffcc, 0 0 25px #00ffcc;
+    }
+
   </style>
 </head>
 
@@ -219,7 +236,7 @@
 
  <div class="roblox">
   <a href="https://www.roblox.com/users/5715215513/profile" target="_blank">
-   <img src="https://cdn-icons-png.flaticon.com/512/5968/5968763.png" width="20">
+   <img src="https://cdn-icons-png.flaticon.com/512/5968/5968763.png">
     Visit my Roblox Profile
   </a>
 </div>
@@ -228,7 +245,7 @@
 
 <div class="discord">
   <a href="https://discord.com/users/1273569463093952564" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" width="20">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
     Contact me on Discord
   </a>
 </div>
