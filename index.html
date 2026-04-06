@@ -39,24 +39,23 @@
       margin-bottom: 30px;
     }
 
-    /* Header wrapper with image and text */
+    /* Header wrapper with image above text */
     .header {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      gap: 10px; /* space between image and text */
       margin-bottom: 10px;
     }
 
     .header img {
-      height: 1em; /* matches roughly the text height */
-      display: inline-block;
+      width: 50%; /* half of the original size */
+      height: auto;
+      margin-bottom: 10px;
     }
 
     h1 {
       font-size: 28px;
       margin: 0;
-      display: inline-block;
     }
 
     p {
@@ -196,7 +195,7 @@
 <div class="main">
 
   <div class="container">
-    <!-- Header with small image and text -->
+    <!-- Header with image above text -->
     <div class="header">
       <img src="https://i.imgur.com/jV8cqA6.png" alt="Header Icon">
       <h1>GetYourUGC</h1>
